@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #BBE2EC;
+    padding: 30px;
+}
+
+.container {
+    position: relative;
+    max-width: 700px;
+    min-width: 700px;
+    width: 100%;
+    background-color: #FFF6E9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px #494949;
+    overflow: hidden;
+}
+
+
+/* header */
+.container .header {
+    margin-bottom: 20px;
+}
+
+.container .header #header1 {
+    display: flex;
+    align-items: right;
+    gap: 10px; 
+}
+
+.container .header #header2  {
+    font-weight: 600;
+    flex-shrink: 0;
+    position: relative;
+    left: 391px;
+    bottom: 28px;
+    color: #116956; 
+}
+
+.container .header #header1 #logo {
+    width: 100px;
+    height: auto;
+}
+
+.container .header #title{
+    max-width: 100%;
+    position: relative;
+    top: 30px;
+    left: 179px;
+    flex-shrink: 0;
+    font-weight: bold;
+    padding-left: 10px;
+    color: #116956; 
+    font-size: 1.8rem; 
+    text-align: center;
+    margin: 0;
+}
+
+/* personal info */
+.PersonalInfo {
+    display: block;
+    flex-direction: column;
+}
+
+.PersonalInfo .title{
+    color: #116956;
+    font-size: 18px;
+    font-weight: bold;    
+}
+
+.PersonalInfo .columns #title {
+    font-weight: 600;
+}
+
+.PersonalInfo .column1 {
+    display: flex;
+    column-gap: 20px;
+}
+
+.PersonalInfo .column1 input {
+    border: 1px solid #ddd;
+    height: 40px;
+    min-width: 300px;
+    padding: 15px;
+}
+
+.PersonalInfo .column2 {
+    display: flex;
+    column-gap: 20px;
+}
+
+.PersonalInfo .column2 input {
+    border: 1px solid #ddd;
+    height: 40px;
+    min-width: 300px;
+    padding: 15px;
+}
+
+.PersonalInfo .columns .column2 #no-mname {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    position: relative;
+    right: 129px;
+    top: 28px;
+}
+
+.PersonalInfo .columns .column2 label[for="no-mname"] {
+    position: relative;
+    left: 40px;
+    top: 5px;
+    font-weight: 600;
+}
+
+.PersonalInfo .gender-option .gender-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.PersonalInfo .gender-option .col0 #gendertitle {
+    font-weight: 600;
+}
+
+.PersonalInfo .gender-option .gender-columns input[type="radio"] {
+    cursor: pointer;
+}
+
+.PersonalInfo .address .columns {
+    display: flex;
+}
+
+.PersonalInfo .address #housenum {
+    position: relative;
+    height: 40px;
+    width: 165px;
+    border: 1px solid #ddd;
+    padding-left: 10px;
+    margin-right: 25px;
+    margin-left: 10px;
+}
+
+.PersonalInfo .address #datalist1 {
+    position: relative;
+    height: 40px;
+    width: 240px;
+    border: 1px solid #ddd;
+    padding-left: 10px;
+    margin-left: 10px;
+}
+
+.address #title {
+    font-weight: 600;
+}
+
+/* health status */
+.healthstatus .title {
+    color: #116956;
+    font-size: 18px;
+    font-weight: bold;
+} 
+
+.healthstatus .columns {
+    display: flex;
+}
+
+.healthstatus .columns #col1 {
+    display: flex;
+}
+
+.healthstatus .columns #col1 label[for="vacc-status-label"] {
+    font-weight: 600;
+}
+
+.healthstatus .columns #col1 input {
+    position: relative;
+    bottom: 10px;
+    height: 40px;
+    width: 138px;
+    border: 1px solid #ddd;
+    padding-left: 10px;
+    margin-left: 10px;
+    margin-right: 25px;
+}
+
+.healthstatus .columns #col2 {
+    position: relative;
+    bottom: 10px;
+}
+
+.healthstatus .columns #col2 label[for="last-checkup"] {
+    font-weight: 600;
+}
+
+.healthstatus .columns #col2 #last-checkup-date {
+    height: 40px;
+    width: 114px;
+    padding-left: 8px;
+    border: 1px solid #ddd;
+}
+
+.healthstatus .symptoms-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.healthstatus .symptoms-columns .col0 #symptoms-title {
+    font-weight: 600;
+}
+
+.healthstatus .symptoms-columns input[type="radio"] {
+    cursor: pointer;
+}
+
+.healthstatus .health-notes {
+    flex-direction: row;
+}
+.healthstatus .health-notes label[for="addl-health-notes"] {
+    font-weight: 600;
+}
+
+.healthstatus .health-notes #addl-health-notes {
+    box-sizing: border-box;
+    padding: 10px; 
+    width: 100%;
+    height: 120px;
+    border: 1px solid #ddd;
+    margin-top: 3px;
+    padding-left: 15px;
+}
+
+.submit {
+    display: flex;
+    justify-content: center; 
+    align-items: center;   
+}
+
+.submit #submit-btn {
+    cursor: pointer;
+    margin-top: 10px;
+    color: #FFF6E9;
+    background-color: #116956;
+    font-weight: 500;
+    border: 1px solid #116956;
+    border-radius: 2px;
+    height: 35px;
+    width: 90px;
+    transition: 0.5s;
+}
+
+.submit #submit-btn:hover {
+    color: #116956;
+    background-color: #FFF6E9;
+    border: 1px solid #116956;
+}
+
+a {
+    text-decoration: none;
+}

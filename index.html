@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barangay Health Monitoring System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div id="header1">
+                <img src="multimedia/libid_logo-removebg-preview.png" alt="logo" id="logo">
+                <p id="title">Health Monitoring Form</p>
+            </div>
+            <p id="header2">Brgy. Libid, Binangonan, Rizal</p>
+        </div>
+        <hr> <br>
+        
+        
+        <form>
+            <!-- Personal Information -->
+            <div class="PersonalInfo">
+                <p class="title">Personal Information:</p> <br>
+                <div class="columns">
+                    <div class="column1">
+                        <div class="field">
+                            <label for="fname" id="title">First Name</label>
+                            <input type="text" required id="fname" name="fname" placeholder="Enter First Name" >
+                        </div>
+                        <div class="field">
+                            <label for="lname" id="title">Last Name</label>
+                            <input type="text" id="lname" name="lname" placeholder="Enter Last Name" required>
+                        </div>
+                    </div>   
+                    <br>
+                    <div class="column2">
+                        <div class="field">
+                            <label for="mname" id="title">Middle Name</label>
+                            <input type="text" id="mname" name="mname" placeholder="Enter Middle Name">
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="no-mname" name="no-mname">
+                            <label for="no-mname">No Middle Name</label>
+                        </div> 
+                    </div>  
+                </div>
+
+                <br><br>
+
+                <div class="gender-option">
+                        <div class="gender-columns">
+                            <div class="col0">
+                                <p id="gendertitle">Gender</p>
+                            </div>
+                            <div class="col1">
+                                <input type="radio" id="male" name="gender" value="Male" checked>
+                                <label for="male">Male</label> 
+                            </div>
+                            <div class="col2">
+                                <input type="radio" id="female" name="gender" value="Female">
+                                <label for="female">Female</label>
+                            </div>
+                            <div class="col3">
+                                <input type="radio" id="other" name="gender" value="Other">
+                                <label for="other">Prefer not to say</label> 
+                            </div>
+                        </div>
+                </div>
+                
+                <br><br>
+                
+                <div class="address">
+                    <p id="title">Address</p>
+                    
+                    <div class="columns">
+                        <div class="col1">
+                            <label for="housenum">House Number</label>
+                            <input type="text" id="housenum" name="housenum" placeholder="Enter House Number" required>
+                        </div>
+                        <div class="col2">
+                            <label for="streets">Street</label>
+                            <form>
+                                <input list="streets" id="datalist1" name="streets" placeholder="Select your Street" required>
+                                <datalist id="streets">
+                                    <option value="A. Bonifacio Street"></option>
+                                    <option value="A. Mabini Street"></option>
+                                    <option value="Baltazar Street"></option>
+                                    <option value="Banahaw Street"></option>
+                                    <option value="Fineza Street"></option>
+                                    <option value="J. Luna Street"></option>
+                                    <option value="J. P. Rizal Street"></option>
+                                    <option value="J.M. Basa Street"></option>
+                                    <option value="Liwanag Street"></option>
+                                    <option value="Lopez Jaena Street"></option>
+                                    <option value="M. H. Del Pilar Street"></option>
+                                    <option value="M. L. QuezonStreet"></option>
+                                    <option value="Manila East Road"></option>
+                                    <option value="Mayon Street"></option>
+                                    <option value="Osmeña Street"></option>
+                                    <option value="P. Burgos Street"></option>
+                                    <option value="P. Gomez Street"></option>
+                                    <option value="Paterno Street"></option>
+                                    <option value="Perez Street"></option>
+                                    <option value="R Zulueta"></option>
+                                    <option value="Regidor Street"></option>
+                                    <option value="Ruben Goto Street"></option>
+                                    <option value="Saint Claire Street"></option>
+                                    <option value="Saint Mary Street"></option>
+                                    <option value="Santa Ursula Street"></option>
+                                    <option value="Ruben Goto Street"></option>
+                                    <option value="Taal Street"></option>
+                                    <option value="Timbugan Street"></option>
+                                    <option value="Valencia Street"></option>
+                                    <option value="Ynares Compound II"></option>
+                                    <option value="Zamora Street"></option>
+                                    <option value="Zulueta Street"></option>
+                                </datalist>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br> <hr> <br>
+
+            <!-- Health Status -->
+            <div class="healthstatus">
+                <p class="title">Health Status:</p> <br>
+            
+                <div class="columns">
+                    <div id="col1">
+                        <label for="vacc-status-label">Vaccination Status</label>                   
+                        <input list="vacc-status" id="datalist2" name="vacc-status" placeholder="Select Status">
+                        <datalist id="vacc-status">
+                            <option value="Vaccinated"></option>
+                            <option value="Unvaccinated"></option>
+                        </datalist>
+                    </div>
+                    <div id="col2">
+                        <label for="last-checkup">Last Medical Checkup </label>                   
+                        <input type="date" id="last-checkup-date" name="last-checkup-date">
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="symptoms-columns">
+                    <div class="col0">
+                        <p id="symptoms-title">Recent Symptoms </p>
+                    </div>
+                    <div class="col1">
+                        <input type="radio" id="fever" name="symptoms" value="Fever" checked>
+                        <label for="fever">Fever</label> 
+                    </div>
+                    <div class="col2">
+                        <input type="radio" id="cough" name="symptoms" value="Cough">
+                        <label for="cough">Cough</label> 
+                    </div>
+                    <div class="col3">
+                        <input type="radio" id="fatigue" name="symptoms" value="Fatigue">
+                        <label for="fatigue">Fatigue</label> 
+                    </div>
+                </div>
+
+                <br>
+                
+                <div class="health-notes">
+                    <label for="addl-health-notes">Additional Health Notes</label>
+                    <textarea name="addl-health-notes" id="addl-health-notes" placeholder="Enter Additional Health Notes"></textarea>
+                </div>
+            </div>
+
+            <a href="lastpage.html">
+                <div class="submit">
+                    <input type="submit" value="Submit" id="submit-btn">
+                </div>
+            </a>
+            
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
